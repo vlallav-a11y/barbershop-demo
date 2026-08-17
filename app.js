@@ -122,8 +122,8 @@ function renderHome(){
   return `
     <section class="hero">
       <span class="hero-badge">КАЗАНЬ · ЕЖЕДНЕВНО 10:00–21:00</span>
-      <h2>Стрижка без звонков и ожидания</h2>
-      <p>Выберите услугу, мастера и удобное время. Подтверждение записи придёт прямо в Telegram.</p>
+      <h2>Свежий образ. Без лишних звонков.</h2>
+      <p>Выберите услугу, мастера и свободное время — запись займёт меньше минуты.</p>
       <div class="hero-actions">
         <button class="primary-btn" data-go-booking type="button">Записаться</button>
         <button class="secondary-btn" data-go-my type="button">Мои записи</button>
@@ -132,8 +132,8 @@ function renderHome(){
 
     <section class="section">
       <div class="section-head">
-        <h3>Популярные услуги</h3>
-        <span>цена фиксирована</span>
+        <h3>Услуги</h3>
+        <span>актуальный прайс</span>
       </div>
       <div class="grid two">
         ${SERVICES.slice(0,4).map(s => `
@@ -155,7 +155,7 @@ function renderHome(){
     <section class="section">
       <div class="section-head">
         <h3>Мастера</h3>
-        <span>4 специалиста</span>
+        <span>наша команда</span>
       </div>
       <div class="barbers-row">
         ${BARBERS.map(b => `
@@ -284,8 +284,8 @@ function renderBooking(){
   const barber = barberById(booking.barberId);
   return `
     ${renderProgress(step)}
-    <h2 class="step-title">Подтвердите запись</h2>
-    <p class="step-subtitle">После подтверждения запись появится в разделе «Мои записи».</p>
+    <h2 class="step-title">Почти готово</h2>
+    <p class="step-subtitle">Проверьте детали и подтвердите запись.</p>
 
     <div class="summary-card">
       <div class="summary-line"><span>Услуга</span><strong>${service.name}</strong></div>
@@ -473,8 +473,8 @@ function renderAdmin(){
   return `
     <div class="admin-shell">
       <section class="admin-hero">
-        <h2>Панель владельца</h2>
-        <p>Демо: записи, мастера, услуги и простая статистика.</p>
+        <h2>Управление барбершопом</h2>
+        <p>Записи, команда, услуги и ключевые показатели — в одном месте.</p>
       </section>
 
       <div class="stats-grid">
